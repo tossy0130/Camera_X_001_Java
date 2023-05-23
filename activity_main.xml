@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/get_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:text="横："
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/get_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:text="縦："
+        app:layout_constraintTop_toBottomOf="@+id/get_with"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/get_gyouretu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:text="表示行列："
+        app:layout_constraintTop_toBottomOf="@+id/get_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextureView
+        android:id="@+id/texture_view"
+        android:layout_width="540px"
+        android:layout_height="540px"
+        app:layout_constraintTop_toBottomOf="@+id/get_gyouretu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Capture"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/texture_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
